@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>demo</title>
+    <!-- browser: style -->
+    <link rel="stylesheet" href="libs/ol/ol.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="demo.css"/>
+    <!-- browser: libs -->
+    <script type="text/javascript" src="libs/ol/ol-debug.js"></script>
+    <script type="text/javascript" src="libs/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+    <div id="map">
+        <div id="menu">
+            <button id="zoom-out" class="btn btn-primary btn-sm">缩小</button>
+            <button id="zoom-in" class="btn btn-success btn-sm">放大</button>
+            <button id="panto" class="btn btn-sm">平移到【武汉】</button>
+            <button id="restore" class="btn btn-danger btn-sm">复位</button>
+        </div>
+    </div>
 </body>
+    <!--demo.js是直接加载并执行，所以要放在div#map后面-->
+    <script type="text/javascript" src="demo.js"></script>
 </html>
